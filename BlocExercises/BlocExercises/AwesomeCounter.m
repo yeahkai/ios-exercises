@@ -13,6 +13,7 @@
 - (NSString *) stringWithNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber
 { /* WORK HERE */
     //NSMutableString *returnString = [NSMutableString string];
+
     NSString *returnString = @"";
     
     if (number == otherNumber) {
@@ -30,12 +31,11 @@
     
     
     for (NSInteger i = lowNumber; i <= highNumber; i++) {
-            // [returnString appendFormat:@"%ld", (long)i];
+        // [returnString appendFormat:@"%ld", (long)i];
         returnString = [returnString stringByAppendingFormat:@"%ld", (long)i];
     }
     
     return returnString;
 }
-
     @end
 
